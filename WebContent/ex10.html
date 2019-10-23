@@ -4,18 +4,34 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>float를 이용한 메뉴 </title>
 <style type="text/css">
-ul.nothing, ul.something {
+* { margin: 0; padding: 0 }
+
+ul.nothing,
+ul.something {
 	font-size: 12px;
 	color: #333;
-	list-style:none;
+	list-style: none;
+	margin: 50px 0 0 50px;
+	height: 50px;
+}
+
+ul.nothing li,
+ul.something li {
+    font-weight: bold;
+    width: 60px;
+	margin-left: 5px;
+	text-align: center;
+	padding: 5px 0;
+	border: 1px solid #777;
 }
 
 ul.nothing li {
-    font-weight:bold; 
-	margin:5px;
+	float: left;
 }
 
-
+ul.something li {
+	float: right;
+}
 </style>
 </head>
 
@@ -28,6 +44,13 @@ ul.nothing li {
     <li> 메뉴 5 </li>
 </ul>
 
+<ul class="something">
+    <li> 메뉴 10 </li>
+    <li> 메뉴 9 </li>
+    <li> 메뉴 8 </li>
+    <li> 메뉴 7 </li>
+    <li> 메뉴 6 </li>
+</ul>
 
 </body>
 </html>
